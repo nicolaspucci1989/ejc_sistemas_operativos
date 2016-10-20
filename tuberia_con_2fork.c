@@ -14,6 +14,7 @@ int main()
 	int bytesleidos;
 	char mensaje[TAMANIO], *frase = "Papi, me gusta mucho la cancio Poker Face de Lady Gaga pero no tanto como las clasees de Sistemas Operativos.";	
 
+	/* Crear el pipe */
 	pipe(descr);
 	if (fork() == 0) {
 		/* Hijo 1 escribe */
