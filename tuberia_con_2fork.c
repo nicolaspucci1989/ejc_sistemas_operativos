@@ -3,16 +3,16 @@
 #include <string.h>
 #include <unistd.h>
 
-#define LEER				0
-#define ESCRIBIR		1	
-#define TAMANIO		110	
+#define LEER			0
+#define ESCRIBIR	1	
+#define TAMANIO		64	
 
 
 int main()
 {
 	int descr[2];
 	int bytesleidos;
-	char mensaje[TAMANIO], *frase = "Papi, me gusta mucho la cancio Poker Face de Lady Gaga pero no tanto como las clasees de Sistemas Operativos.";	
+	char mensaje[TAMANIO], *frase = "Un mensaje enviado.";	
 
 	/* Crear el pipe */
 	pipe(descr);
